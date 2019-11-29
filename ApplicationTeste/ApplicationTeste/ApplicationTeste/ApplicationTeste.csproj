@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0933DCB7-0F59-48E6-986C-69D9CAA2F037}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ApplicationTeste</RootNamespace>
+    <AssemblyName>ApplicationTeste</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\laris\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CadastrarAbastecimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarAbastecimento.Designer.cs">
+      <DependentUpon>CadastrarAbastecimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarAluguel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarAluguel.Designer.cs">
+      <DependentUpon>CadastrarAluguel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarAviso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarAviso.Designer.cs">
+      <DependentUpon>CadastrarAviso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarCliente.Designer.cs">
+      <DependentUpon>CadastrarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarFornecedor.Designer.cs">
+      <DependentUpon>CadastrarFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarFuncionario.Designer.cs">
+      <DependentUpon>CadastrarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarManutencao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarManutencao.Designer.cs">
+      <DependentUpon>CadastrarManutencao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarMotorista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarMotorista.Designer.cs">
+      <DependentUpon>CadastrarMotorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarProduto.Designer.cs">
+      <DependentUpon>CadastrarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarViagem.Designer.cs">
+      <DependentUpon>CadastrarViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarAbastecimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarAbastecimento.Designer.cs">
+      <DependentUpon>ConsultarAbastecimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarAluguel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarAluguel.Designer.cs">
+      <DependentUpon>ConsultarAluguel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarCliente.Designer.cs">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarFornecedor.Designer.cs">
+      <DependentUpon>ConsultarFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarFuncionario.Designer.cs">
+      <DependentUpon>ConsultarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarManutencao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarManutencao.Designer.cs">
+      <DependentUpon>ConsultarManutencao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarMotorista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarMotorista.Designer.cs">
+      <DependentUpon>ConsultarMotorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarProduto.Designer.cs">
+      <DependentUpon>ConsultarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCadastrar.Designer.cs">
+      <DependentUpon>MenuCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuConsultar.Designer.cs">
+      <DependentUpon>MenuConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaginaInicial.Designer.cs">
+      <DependentUpon>PaginaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CadastrarAbastecimento.resx">
+      <DependentUpon>CadastrarAbastecimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarAluguel.resx">
+      <DependentUpon>CadastrarAluguel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarAviso.resx">
+      <DependentUpon>CadastrarAviso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarCliente.resx">
+      <DependentUpon>CadastrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarFornecedor.resx">
+      <DependentUpon>CadastrarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarFuncionario.resx">
+      <DependentUpon>CadastrarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarManutencao.resx">
+      <DependentUpon>CadastrarManutencao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarMotorista.resx">
+      <DependentUpon>CadastrarMotorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarProduto.resx">
+      <DependentUpon>CadastrarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarViagem.resx">
+      <DependentUpon>CadastrarViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarAbastecimento.resx">
+      <DependentUpon>ConsultarAbastecimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarAluguel.resx">
+      <DependentUpon>ConsultarAluguel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarCliente.resx">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarFornecedor.resx">
+      <DependentUpon>ConsultarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarFuncionario.resx">
+      <DependentUpon>ConsultarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarManutencao.resx">
+      <DependentUpon>ConsultarManutencao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarMotorista.resx">
+      <DependentUpon>ConsultarMotorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarProduto.resx">
+      <DependentUpon>ConsultarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCadastrar.resx">
+      <DependentUpon>MenuCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuConsultar.resx">
+      <DependentUpon>MenuConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaginaInicial.resx">
+      <DependentUpon>PaginaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REDIMENS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuário-50%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-adicionar-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pesquisar-50%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-modo-de-leitura-do-chrome-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-configurações-50%285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-arredondado-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-fechar-janela-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minimizar-janela-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bomba-de-gasolina-100%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chave-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuário-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bomba-de-gasolina-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-aviso-de-aviso-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Localizacao mundial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-produto-novo-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-produto-novo-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-motorista-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-motorista-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-motorista-100 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-fornecedor-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\funcionario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manutencao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-carro-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mapa-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ajuda-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfilusuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estd11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-casa-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-caneta-esferográfica-50.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
